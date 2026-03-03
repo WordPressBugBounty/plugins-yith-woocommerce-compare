@@ -4,13 +4,13 @@ Contributors: yithemes
 Tags: yith, woocommerce compare, compare products, product compare, product comparison
 Requires at least: 6.7
 Tested up to: 6.9
-Stable tag: 3.7.0
+Stable tag: 3.8.0
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 YITH WooCommerce Compare allows you to compare more products of your shop in one complete table.
-WooCommerce Compatible up to 10.5
+WooCommerce Compatible up to 10.6
 
 == Description ==
 
@@ -72,6 +72,11 @@ You can report security bugs through the Patchstack Vulnerability Disclosure Pro
 3. The settings of plugin
 
 == Changelog ==
+
+= 3.8.0 = Released on 03 March 2026
+
+* New: support for WooCommerce 10.6
+* Update: YITH plugin framework
 
 = 3.7.0 = Released on 14 January 2026
 
