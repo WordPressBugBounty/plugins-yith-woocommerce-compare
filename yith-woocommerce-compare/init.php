@@ -3,18 +3,18 @@
  * Plugin Name: YITH WooCommerce Compare
  * Plugin URI: https://yithemes.com/themes/plugins/yith-woocommerce-compare/
  * Description: The <code><strong>YITH WooCommerce Compare</strong></code> plugin allow you to compare in a simple and efficient way products on sale in your shop and analyze their main features in a single table. <a href="https://yithemes.com/" target="_blank">Get more plugins for your e-commerce shop on <strong>YITH</strong></a>.
- * Version: 3.8.0
+ * Version: 3.9.0
  * Author: YITH
  * Author URI: https://yithemes.com/
  * Text Domain: yith-woocommerce-compare
  * Domain Path: /languages/
- * WC requires at least: 10.4
- * WC tested up to: 10.6
+ * WC requires at least: 10.5
+ * WC tested up to: 10.7
  * Requires Plugins: woocommerce
  *
  * @author YITH <plugins@yithemes.com>
  * @package YITH\Compare
- * @version 3.8.0
+ * @version 3.9.0
  */
 
 /*
@@ -40,7 +40,7 @@ defined( 'ABSPATH' ) || exit; // Exit if accessed directly.
  *  === Define constants. ===
  */
 
-defined( 'YITH_WOOCOMPARE_VERSION' ) || define( 'YITH_WOOCOMPARE_VERSION', '3.8.0' );
+defined( 'YITH_WOOCOMPARE_VERSION' ) || define( 'YITH_WOOCOMPARE_VERSION', '3.9.0' );
 defined( 'YITH_WOOCOMPARE' ) || define( 'YITH_WOOCOMPARE', true );
 defined( 'YITH_WOOCOMPARE_FREE_INIT' ) || define( 'YITH_WOOCOMPARE_FREE_INIT', plugin_basename( __FILE__ ) );
 defined( 'YITH_WOOCOMPARE_SLUG' ) || define( 'YITH_WOOCOMPARE_SLUG', 'yith-woocommerce-compare' );
