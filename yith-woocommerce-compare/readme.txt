@@ -2,10 +2,10 @@
 
 Contributors: yithemes
 Tags: yith, woocommerce compare, compare products, product compare, product comparison
-Requires at least: 6.8
-Tested up to: 7.0
-Stable tag: 3.12.0
-Requires PHP: 7.4
+Requires at least: 6.9
+Tested up to: 7.1
+Stable tag: 3.13.0
+Requires PHP: 8.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -72,6 +72,11 @@ You can report security bugs through the Patchstack Vulnerability Disclosure Pro
 3. The settings of plugin
 
 == Changelog ==
+
+= 3.13.0 = Released on 12 August 2026
+
+* New: support for WordPress 7.1
+* Update: YITH plugin framework
 
 = 3.12.0 = Released on 20 July 2026
 
