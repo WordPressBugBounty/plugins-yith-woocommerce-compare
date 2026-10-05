@@ -33,6 +33,12 @@ if ( ! class_exists( 'YITH_WooCompare_Counter_Shortcode' ) ) {
 				$atts
 			);
 
+			// Sanitize after shortcode_parse_atts() has decoded escape sequences (e.g. \x3C).
+			$args['text']      = sanitize_text_field( $args['text'] );
+			$args['type']      = in_array( $args['type'], array( 'text', 'number' ), true ) ? $args['type'] : 'text';
+			$args['show_icon'] = 'yes' === $args['show_icon'] ? 'yes' : 'no';
+			$args['icon']      = esc_url_raw( $args['icon'] );
+
 			$products = YITH_WooCompare_Products_List::instance()->get();
 			$count    = count( $products );
 

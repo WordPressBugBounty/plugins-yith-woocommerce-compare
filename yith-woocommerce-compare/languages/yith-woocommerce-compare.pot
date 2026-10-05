@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the YITH WooCommerce Compare package.
 msgid ""
 msgstr ""
-"Project-Id-Version: YITH WooCommerce Compare 3.14.0\n"
+"Project-Id-Version: YITH WooCommerce Compare 3.15.0\n"
 "Report-Msgid-Bugs-To: "
 "https://wordpress.org/support/plugin/yith_woocommerce_compare\n"
-"POT-Creation-Date: 2026-08-26 12:07:35+00:00\n"
+"POT-Creation-Date: 2026-10-05 14:55:15+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -18,7 +18,7 @@ msgstr ""
 #: includes/admin/class-yith-woocompare-admin-shortcodes.php:75
 #: includes/class-yith-woocompare-helper.php:101
 #: includes/widgets/class-yith-woocompare-compare-widget.php:122
-#: includes/widgets/class-yith-woocompare-counter-widget.php:85
+#: includes/widgets/class-yith-woocompare-counter-widget.php:92
 msgid "Title"
 msgstr ""
 
@@ -218,7 +218,7 @@ msgstr ""
 msgid "Remove"
 msgstr ""
 
-#: includes/shortcodes/class-yith-woocompare-counter-shortcode.php:48
+#: includes/shortcodes/class-yith-woocompare-counter-shortcode.php:54
 msgid "{{count}} product in compare"
 msgid_plural "{{count}} products in compare"
 msgstr[0] ""
@@ -240,27 +240,27 @@ msgstr ""
 msgid "The widget displays a counter of products added to the comparison table."
 msgstr ""
 
-#: includes/widgets/class-yith-woocompare-counter-widget.php:93
+#: includes/widgets/class-yith-woocompare-counter-widget.php:100
 msgid "Number and text"
 msgstr ""
 
-#: includes/widgets/class-yith-woocompare-counter-widget.php:94
+#: includes/widgets/class-yith-woocompare-counter-widget.php:101
 msgid "Only number"
 msgstr ""
 
-#: includes/widgets/class-yith-woocompare-counter-widget.php:101
+#: includes/widgets/class-yith-woocompare-counter-widget.php:108
 msgid "Show counter icon"
 msgstr ""
 
-#: includes/widgets/class-yith-woocompare-counter-widget.php:106
+#: includes/widgets/class-yith-woocompare-counter-widget.php:113
 msgid "Icon URL"
 msgstr ""
 
-#: includes/widgets/class-yith-woocompare-counter-widget.php:112
+#: includes/widgets/class-yith-woocompare-counter-widget.php:119
 msgid "Counter text"
 msgstr ""
 
-#: includes/widgets/class-yith-woocompare-counter-widget.php:116
+#: includes/widgets/class-yith-woocompare-counter-widget.php:123
 msgid "Use {{count}} as a placeholder for the product counter."
 msgstr ""
 
@@ -451,7 +451,7 @@ msgctxt "The widget name"
 msgid "YITH WooCommerce Compare Counter Widget"
 msgstr ""
 
-#: includes/widgets/class-yith-woocompare-counter-widget.php:91
+#: includes/widgets/class-yith-woocompare-counter-widget.php:98
 msgctxt "The widget counter style"
 msgid "Counter style"
 msgstr ""

@@ -52,7 +52,14 @@ if ( ! class_exists( 'YITH_WooCompare_Counter_Widget' ) ) {
 			$localized_widget_title = apply_filters( 'wpml_translate_single_string', $instance['title'], 'Widget', 'widget_yit_compare_title_text' );
 
 			echo wp_kses_post( $before_widget . $before_title . $localized_widget_title . $after_title );
-			echo do_shortcode( '[yith_woocompare_counter type="' . $instance['type'] . '" show_icon="' . $instance['show_icon'] . '" text="' . $instance['text'] . '" icon="' . $instance['icon'] . '"]' );
+			echo YITH_WooCompare_Counter_Shortcode::render( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				array(
+					'type'      => $instance['type'],
+					'show_icon' => $instance['show_icon'],
+					'text'      => $instance['text'],
+					'icon'      => $instance['icon'],
+				)
+			);
 			echo wp_kses_post( $after_widget );
 		}
 
@@ -130,9 +137,9 @@ if ( ! class_exists( 'YITH_WooCompare_Counter_Widget' ) ) {
 			$instance = $old_instance;
 
 			$instance['title']     = wp_strip_all_tags( $new_instance['title'] );
-			$instance['type']      = $new_instance['type'];
-			$instance['show_icon'] = $new_instance['show_icon'];
-			$instance['text']      = $new_instance['text'];
+			$instance['type']      = ( isset( $new_instance['type'] ) && in_array( $new_instance['type'], array( 'text', 'number' ), true ) ) ? $new_instance['type'] : 'text';
+			$instance['show_icon'] = ( isset( $new_instance['show_icon'] ) && 'yes' === $new_instance['show_icon'] ) ? 'yes' : 'no';
+			$instance['text']      = sanitize_text_field( $new_instance['text'] );
 			$instance['icon']      = esc_url( $new_instance['icon'] );
 
 			return $instance;
